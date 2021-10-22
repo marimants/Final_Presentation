@@ -56,6 +56,10 @@
     font-family: 'Bitter', serif;
     letter-spacing: 2px;
 }
+.animate__zoomInDown {
+    animation-name: zoomInDown;
+    animation-duration: 9s;
+}
 .main-page-text {
    color: rgb(0, 0, 0);
    font-size: 30px;
@@ -82,11 +86,11 @@
 }
 
 /* SECTION 2 */
-#image-block {
+#image-block, #image-block1, #image-block2 {
     max-width: 1021px;
     height: 680px;
 }
-#image-box {
+#image-box, #image-box1 {
     max-width: 1021px;
     height: 680px;
 }
@@ -97,8 +101,8 @@
 }
 #discover-title {
     margin-top: 100px;
-    font-size: 36px;
-    font-family: 'Bitter', serif;
+    font-size: 45px;
+    font-family: 'Luckiest Guy', cursive;
 }
 #facts-div {
     background-image: url(../images/pexels-aleksandar-pasaric-4344748.jpg);
@@ -110,16 +114,16 @@
     background-position: center;
     margin-top: 100px;
 }
-#text-wrapper {
+.text-wrapper {
     color: #fff;
     font-size: 19px;
     font-family: 'Bitter', serif;
     line-height: 1.8;
 }
-#facts {
+#facts, #facts1 {
     color: #fff;
     font-size: 40px;
-    font-family: 'Bitter', serif;
+    font-family: 'Luckiest Guy', cursive;
     padding-bottom: 20px;
     padding-top: 50px;
 }
@@ -136,23 +140,24 @@
     justify-content: space-evenly;
     margin-top: 80px;
 }
-#food-image-block {
+.food-image-block {
     max-width: 515px;
     height: 343px;
     width: 100%;
 }
-#card-block {
+#card-block, #card-block1, #card-block2 {
     max-width: 600px;
     height: fit-content;
     border: solid #ccc 4px;
     border-radius: 6px;
 }
-#card-title {
+.card-title {
     color: #000;
     font-size: 30px;
     margin-top: 10px;
+    font-family: 'Luckiest Guy', cursive;
 }
-#card-text-block {
+.card-text-block {
     color: #000;
     font-size: 18px;
     font-family: 'Bitter', serif;
@@ -161,7 +166,118 @@
 .main-food-title {
     font-size: 40px;
     color: #000;
-    font-family: 'Bitter', serif;
+    font-family: 'Luckiest Guy', cursive;
     margin-left: 150px;
     margin-top: 50px;
+}
+/* =====section3==== */
+#section3-image-block {
+    display: flex;
+    flex-direction: column;
+}
+#btn-cont {
+    max-width: 190px;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+}
+#accordionExample {
+    max-width: 940px;
+    width: 100%;
+    height: fit-content;
+    margin-left: 145px;
+    margin-right: 150px;
+}
+.main3-title {
+    margin-left: 145px;
+    margin-bottom: 80px;
+}
+#section3-block {
+    margin-top: 200px;
+}
+#things {
+    color: #000;
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: 'Luckiest Guy', cursive;
+}
+#title3 {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Luckiest Guy', cursive;
+}
+#hi, #hi1, #hi2 {
+    color: #000;
+    font-size: 22px;
+    font-family: 'Luckiest Guy', cursive;
+}
+.accordian-text {
+    color: #000;
+    font-size: 20px;
+    font-family: 'Bitter', serif;
+}
+.accordian-block {
+    display: flex;
+}
+.gif-div {
+    width: fit-content;
+    height: fit-content;
+}
+#video-block {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.museum-gif {
+    max-width: 1076px;
+    height: 606px;
+    width: 100%;
+}
+.video-block-title {
+    color: #000;
+    font-size: 50px;
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 60px;
+}
+.video-btn {
+    max-width: 260px;
+    width: 100%;
+    height: 70px;
+    border: #000 double ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+}
+.video-block-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+}
+.video-block-link:hover {
+    color: black;
+}
+.video-btn:hover {
+    cursor: pointer;
+}
+.karting-div {
+    max-width: 1100px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+}
+.karting-img {
+    max-width: 505px;
+    height: 284px;
+    width: 100%;
 }
