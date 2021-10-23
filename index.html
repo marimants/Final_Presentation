@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/81d1da81c8.js" crossorigin="anonymous"></script>
 
     <!-- Icon -->
     <link rel="icon" href="images/shrine.png">
@@ -33,8 +37,9 @@
 </head>
 <body style="padding-top: 125px;">
     <header class="header-wrapper">
-        <nav class="navigation">
-            <a href="#section1"><img src="images/japan-logo.svg" alt="logo-image" class="logo-image"></a>
+      <div class="nav-bar">
+        <a href="#section1"><img src="images/japan-logo.svg" alt="logo-image" class="logo-image"></a>
+        <nav  id="navi">
             <ul class="nav-ul">
                 <li><a href="#section1" class="header-links hvr-underline-from-center">HOME</a></li>
                 <li><a href="#section2" class="header-links hvr-underline-from-center">DISCOVER</a></li>
@@ -43,6 +48,10 @@
                 <li><a href="#section5" class="header-links hvr-underline-from-center">CONTACT</a></li>
             </ul>
         </nav>
+        <div class="burger-bar-div" >
+          <i class="fas fa-bars" id="burger"></i>
+        </div>
+      </div> 
     </header> 
     <div class="main-page-bg">
         <section id="section1">
@@ -54,7 +63,7 @@
         </section>
     </div>
     <section id="section2">
-        <div style="width: 400px; margin-left: 220px;">
+        <div class="div-cont">
             <h2 id="discover-title">Discover Japan</h2>
         </div>
         <div id="section2-div">
@@ -86,7 +95,7 @@
                   </button>
                 </div>
             </div>
-            <div style="width: 680px;">
+            <div style="width: 515px;">
                 <img src="images/4232490.jpg" alt="map-image" id="image-box1">
             </div>
        </div>
@@ -101,7 +110,7 @@
                  <p class="text-wrapper"> In 300 B.C., the Yayoi people came to Honshu Island from Korea and China. The Yayoi were skilled weavers, tool makers and farmers, and they were the first people in Japan to cultivate rice in flooded paddy fields.
                  In 660 B.C., Japan’s first emperor, Jimmu Tenno, came to power. For many years following, Japan was governed by a string of emperors, until the 12th century A.D. when military rulers, called shoguns, took control by force.</p>
                  <p class="text-wrapper">Europeans first arrived in Japan in 1543, bringing with them a range of new technologies and cultural practices, including the Christian religion. But in 1635, the ruling shogun closed Japan to foreigners and forbade Japanese to travel abroad, beginning a state of isolation that would last more than 200 years. In 1868, the shoguns were overthrown and emperors returned. This was a time of great change and modernisation for Japan.</p>
-                 <p class="text-wrapper">During World War I (1914-1917), Japan fought on the side of the Allies (Britain, France, Belgium, Russia and the USA). But in World War II, Japan’s military leaders sided with the Axis powers, joining forces with Germany and Italy.</p>
+                 <p class="text-wrapper" id="last-text">During World War I (1914-1917), Japan fought on the side of the Allies (Britain, France, Belgium, Russia and the USA). But in World War II, Japan’s military leaders sided with the Axis powers, joining forces with Germany and Italy.</p>
             </div>
        </div> 
     </section>
@@ -125,7 +134,7 @@
                 <img src="images/riceballs.webp" alt="sushi-image" class="food-image-block hvr-shrink" >
                 <div class="card-info">
                    <h3 class="card-title">Rice Balls</h3>
-                   <p class="card-text-block">You may have heard of onigiri, or rice balls, before. They are made in bento lunches by families and often seen sold in convenience stores and supermarkets. This is a classic choice for a snack or light meal.</p>
+                   <p class="card-text-block">You may have heard of onigiri, or rice balls, before. They are made in bento lunches by families and often seen sold in convenience stores and supermarkets.</p>
                 </div>
             </div>
         </div>
@@ -178,28 +187,30 @@
                 </div>
             </div> 
             <div class="gif-div">
-                <img src="images/ezgif.com-gif-maker (2).gif" alt="cat-gif" class="cat-gif">
+                <img src="images/ezgif.com-gif-maker(2).gif" alt="cat-gif" class="cat-gif">
             </div>   
         </div>
         <div id="video-block">
             <h2 class="video-block-title">World’s first digital art museum lights up Tokyo, Japan</h2>
-            <img src="images/ezgif.com-gif-maker (1).gif" alt="museum-gif" class="museum-gif">
+            <img src="images/ezgif.com-gif-maker(1).gif" alt="museum-gif" class="museum-gif">
             <div class="video-btn">
                 <a href="https://www.youtube.com/watch?v=qTW6VVzHsyo" class="video-block-link" target="_blank">Click Me To Watch Full Video!</a>
             </div>
         </div>
         <div class="karting-div">
             <h2 class="video-block-title">“Mario Kart” in Tokyo: How it works</h2>
-            <div style="display: flex; margin-bottom: 40px;">
-               <img src="images/image.jpg" alt="" class="karting-img hvr-shrink" style="margin-right: 30px;">
+            <div class="kart-div">
+               <img src="images/image.jpg" alt="" class="karting-img hvr-shrink">
                <img src="images/mario-kart-AP-770x494.jpg" alt="" class="karting-img hvr-shrink">
             </div>
             <p class="accordian-text">The street-kart rental companies offer you the opportunity to drive through the city streets, as long as you have one of the approved driving licenses.
             <p class="accordian-text"> Most go-karts are fitted with GPS and communication bands, and you’ll be following a tour guide at all times, so you don’t need to worry about taking a wrong turn and ending up in, say, Hokkaido. You can also try go-karting under the neon-lights of Osaka or Kyoto.</p>
              <p class="accordian-text">Before scorching the tarmac, you can stash your belongings in a locker at the shop and change into your costume, which is often included in the price.</p>
              <p class="accordian-text">When you have decided on which tour you want and are certain you have the right paperwork, you can book with the shop of your choice online. There may be options for free cancellation depending on the weather, but be sure to arrive promptly for your booking otherwise.</p>
-            
-        </div>
+          </div>
+          </div>
+    </section>
+    <section id="section4">
     </section>
 
     <!-- JS LINK -->  

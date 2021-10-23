@@ -10,13 +10,27 @@
     right: 0;
     z-index: 99;
 }
-.navigation {
+#navi {
     display: flex;
+    align-items: flex-end;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 .nav-ul {
     display: flex;
     align-items: center;
+} 
+.burger-bar-div {
+    position: absolute;
+    right: 30px;
+    display: none;
+}
+.fa-bars {
+    color: black;
+    font-size: 45px;
 }
 .logo-image {
     max-width: 87px;
@@ -47,6 +61,9 @@
     padding-top: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 #main-title {
     color: #000;
@@ -86,13 +103,15 @@
 }
 
 /* SECTION 2 */
-#image-block, #image-block1, #image-block2 {
-    max-width: 1021px;
-    height: 680px;
+#image-box1 {
+    max-width: 515px;
+    height: 515px;
+    width: 100%;
 }
-#image-box, #image-box1 {
-    max-width: 1021px;
-    height: 680px;
+#image-box {
+    max-width: 770px;
+    height: 515px;
+    width: 100%;
 }
 #section2-div {
     display: flex;
@@ -108,7 +127,7 @@
     background-image: url(../images/pexels-aleksandar-pasaric-4344748.jpg);
     box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 70%);
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,12 +144,11 @@
     font-size: 40px;
     font-family: 'Luckiest Guy', cursive;
     padding-bottom: 20px;
-    padding-top: 50px;
 }
 #facts-block {
     width: 100%;
     height: fit-content;
-    padding: 60px 220px 0 220px;
+    padding: 0 200px 0 200px;
     display: flex;
     flex-direction: column;
 }
@@ -139,6 +157,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 80px;
+    width: 100%;
 }
 .food-image-block {
     max-width: 515px;
@@ -146,7 +165,7 @@
     width: 100%;
 }
 #card-block, #card-block1, #card-block2 {
-    max-width: 600px;
+    max-width: 550px;
     height: fit-content;
     border: solid #ccc 4px;
     border-radius: 6px;
@@ -180,6 +199,9 @@
     width: 100%;
     height: 90px;
     background-color: transparent;
+}
+.div-cont {
+    margin-left: 220px;
 }
 #accordionExample {
     max-width: 940px;
@@ -281,4 +303,39 @@
     max-width: 505px;
     height: 284px;
     width: 100%;
+    margin-right: 30px;
+}
+.kart-div {
+    display: flex; 
+    margin-bottom: 40px;
+}
+/* ==section 4== */
+/* .gallery-container {
+    width: 100%;
+    height: fit-content;
+}
+
+.gallery-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.gallery-main-title {
+    font-size: 55px;
+    color: black;
+    font-family: 'Luckiest Guy', cursive;
+} */
+#section4 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#send {
+    width: 100px;
+    height: 100px;
 }
