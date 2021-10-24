@@ -1,4 +1,20 @@
- @media (max-width: 1655px) {
+@media (max-width: 2050px) {
+    #box1, #box2 {
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 1950px) {
+    #box {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1730px) {
+    #box3 {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1655px) {
     #food-div {
         display: flex;
         flex-wrap: wrap;
@@ -41,10 +57,6 @@
         flex-direction: column;
         padding: 0 10px 0 10px;
     }
-    .museum-gif {
-        max-width: 720px;
-        height: 405px;
-    }
     .video-block-title {
         font-size: 35px;
     }
@@ -80,7 +92,7 @@
         display: block;
         margin-top: 35px;
     }
-    #navi {
+    .nav-ul {
         width: 100%;
         justify-content: flex-end;
         display: none;
@@ -102,9 +114,6 @@
     }
 }
 @media (max-width: 800px) {
-    #image-box1 {
-        display: none;
-    }
     #facts-div {
         margin-top: 150px;
     }
@@ -116,10 +125,6 @@
     }
 } 
 @media (max-width: 750px) {
-    .museum-gif {
-        max-width: 460px;
-        height: 259px;
-    }
     #things {
         font-size: 35px;
     }
@@ -134,30 +139,28 @@
         margin-left: 40px;
     }
 }
-@media (max-width: 630px) {
-    .cat-gif {
-        max-width: 500px;
-        height: 237px;
+@media (max-width: 700px) {
+    #box img {
+        max-width: none;
+        height: fit-content;
     }
+}
+@media (max-width: 630px) {
     .main3-title {
         margin-left: 20px;
     }
 }
-@media (max-width: 580px) {
-    .food-image-block {
-        max-width: 365px;
-        height: 192px;
+@media (max-width: 600px) {
+    .cat-gif {
+        max-width: 600px;
+        width: 100%;
+
+    }
+    #image-box1 {
+        display: none;
     }
 }
 @media (max-width: 480px) {
-    .cat-gif {
-        max-width: 400px;
-        height: 137px;
-    }
-    .museum-gif {
-        max-width: 318px;
-        height: 179px;
-    }
     .video-block-title {
         font-size: 25px;
     }
